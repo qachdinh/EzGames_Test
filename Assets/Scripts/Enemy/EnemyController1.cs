@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
     public Transform player;
     public PunchHitBox punchHitbox;
 
+    public Renderer renderer;
+
 
     public int maxHealth = 50;
     public float moveSpeed = 1.5f;
@@ -25,6 +27,12 @@ public class EnemyController : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player")?.transform;
         }
+
+    }
+
+    public void SetEnemyData(LevelDataInfo data)
+    {
+        renderer.material.mainTextureScale = new Vector2(data.tillingX, data.tillingY);
     }
 
     private void Update()
@@ -68,12 +76,17 @@ public class EnemyController : MonoBehaviour
     public void Die()
     {
         animator.SetTrigger("Die");
-        StartCoroutine(DieAndShowVictory());
+        StartCoroutine(DieAndShowVictory());  
     }
 
     private IEnumerator DieAndShowVictory()
     {
-        yield return new WaitForSeconds(3f); // th?i l??ng animation Die
-        FindObjectOfType<LevelManager>()?.EnemyDefeated();
+        yield return new WaitForSeconds(3f);
+        var gm = FindObjectOfType<GameManager>();
+        if (gm != null && gm.victoryPanel != null)
+        {
+            gm.victoryPanel.SetActive(true);
+        }
+        Destroy(gameObject);
     }
 }
