@@ -23,6 +23,15 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+        if (slider != null)
+        {
+            slider.maxValue = maxHealth;
+            slider.value = currentHealth;
+        }
+    }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;

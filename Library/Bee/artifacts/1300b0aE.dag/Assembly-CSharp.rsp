@@ -365,12 +365,15 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/Scripts/Enemy/EnemyController1.cs"
-"Assets/Scripts/LevelManager.cs"
+"Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Level/LevelConfigList.cs"
+"Assets/Scripts/Level/LevelData.cs"
 "Assets/Scripts/Player/PlayerCombat.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Player/PlayerHealth.cs"
 "Assets/Scripts/PunchHitBox.cs"
 "Assets/Scripts/UI/MainMenuUI.cs"
+"Assets/Scripts/UI/VictoryPanel.cs"
 -langversion:9.0
 /deterministic
 /optimize+
