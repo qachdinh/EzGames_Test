@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public void EnablePunchHitbox() => punchHitbox.EnableHitbox();
     public void DisablePunchHitbox() => punchHitbox.DisableHitbox();
 
+    [SerializeField] float maxX;
+    [SerializeField] float maxZ;
+
     private void Update()
     {
         float h = joystick.Horizontal;
@@ -23,6 +26,8 @@ public class PlayerController : MonoBehaviour
         {
             transform.forward = dir;
 
+            var currentPosition = transform.position + dir.normalized * speed * Time.deltaTime;
+            if (currentPosition.z > maxZ || currentPosition.z < -maxZ || currentPosition.x >maxX || currentPosition.x<-maxX) return;
             transform.position += dir.normalized * speed * Time.deltaTime;
 
             animator.SetBool("isMoving", true);
