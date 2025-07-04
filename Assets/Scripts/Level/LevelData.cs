@@ -19,5 +19,5 @@ public class LevelDataInfo
 
 
     public Vector3 playerSpawnPoint;
-    public Vector3 enemySpawnPoint;
+    public List<Vector3> enemySpawnPoint;
 }

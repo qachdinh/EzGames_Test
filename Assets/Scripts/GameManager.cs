@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI levelText;
 
-
+    private int aliveEnemyCount = 0;
 
     void Start()
     {
@@ -37,8 +37,15 @@ public class GameManager : MonoBehaviour
         player.position = datas.playerSpawnPoint;
         player.GetComponent<PlayerHealth>().ResetHealth();
 
-        var enemySpawn = Instantiate(currentEnemy, datas.enemySpawnPoint, Quaternion.identity);
-        enemySpawn.SetEnemyData(datas);
+        int enemyCount = GameConfig.SelectedMode == GameMode.OneVsOne ? 1 : 2;
+
+        for (int i = 0; i < enemyCount; i++)
+        {
+            var spawnPos = datas.enemySpawnPoint[i];
+            var enemy = Instantiate(currentEnemy, spawnPos, Quaternion.identity);
+            enemy.SetEnemyData(datas);
+        }
+        aliveEnemyCount = enemyCount;
 
         levelText.text = "Level " + levelIndex;
     }
@@ -51,4 +58,21 @@ public class GameManager : MonoBehaviour
         LoadLevel(currentLevel);
     }
 
+    public void EnemyDied()
+    {
+        aliveEnemyCount--;
+
+        if (aliveEnemyCount <= 0)
+        {
+            ShowVictory();
+        }
+    }
+    private void ShowVictory()
+    {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.sfxWin);
+        if (victoryPanel != null)
+        {
+            victoryPanel.SetActive(true);
+        }
+    }
 }

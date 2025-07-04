@@ -17,49 +17,69 @@ MonoBehaviour:
     tillingX: 1.1
     tillingY: 1.1
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 2
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 1.5
     tillingY: 1.5
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 3
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 2
     tillingY: 2
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 4
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 2.5
     tillingY: 2.5
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 5
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 3
     tillingY: 3
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 6
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 3.5
     tillingY: 3.5
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 7
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 4
     tillingY: 4
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 8
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 4.5
     tillingY: 4.5
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 9
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 5
     tillingY: 5
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
-  - levelNumber: 10
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
+  - levelNumber: 1
     tillingX: 5.5
     tillingY: 5.5
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
-    enemySpawnPoint: {x: 0, y: 0.513, z: 1.511551}
+    enemySpawnPoint:
+    - {x: -1.461, y: 0.513, z: 2.38}
+    - {x: -0.108, y: 0.513, z: 2.38}
