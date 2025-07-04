@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel(int levelIndex)
     {
+        isGameOver = false;
+
         if (levelIndex - 1 >= levelConfigList.levels.datas.Count)
         {
             Debug.Log("Finish");
