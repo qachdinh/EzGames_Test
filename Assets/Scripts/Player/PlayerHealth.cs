@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -52,5 +52,17 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         animator.SetTrigger("Die");
+        StartCoroutine(DieAndShowLose());
+
+    }
+    private IEnumerator DieAndShowLose()
+    {
+        yield return new WaitForSeconds(3f);
+
+        var gm = FindObjectOfType<GameManager>();
+        if (gm != null)
+        {
+            gm.ShowLose();
+        }
     }
 }

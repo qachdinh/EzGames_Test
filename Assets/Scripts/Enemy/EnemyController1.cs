@@ -78,6 +78,7 @@ public class EnemyController : MonoBehaviour
     {
         isDead = true;
         animator.SetTrigger("Die");
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.hurt);
         StartCoroutine(DieAndShowVictory());  
     }
 

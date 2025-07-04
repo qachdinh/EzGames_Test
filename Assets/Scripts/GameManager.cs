@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject victoryPanel;
     public GameObject finishPanel;
+    public GameObject losePanel;
+
+    public bool isGameOver = false;
 
     public TextMeshProUGUI levelText;
 
@@ -69,10 +72,20 @@ public class GameManager : MonoBehaviour
     }
     private void ShowVictory()
     {
+        isGameOver = true;
         AudioManager.Instance.PlaySFX(AudioManager.Instance.sfxWin);
         if (victoryPanel != null)
         {
             victoryPanel.SetActive(true);
+        }
+    }
+    public void ShowLose()
+    {
+        isGameOver = true;
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.sfxLose);
+        if (losePanel != null)
+        {
+            losePanel.SetActive(true);
         }
     }
 }

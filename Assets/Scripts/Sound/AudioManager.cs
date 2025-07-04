@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip sfxWin;
     public AudioClip start;
     public AudioClip hurt;
+    public AudioClip sfxLose;
+
 
 
 

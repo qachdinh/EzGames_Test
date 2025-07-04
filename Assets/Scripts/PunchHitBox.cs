@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PunchHitBox : MonoBehaviour
 {
+    private GameManager gm;
     private Collider hitbox;
 
     public string targetTag = "Enemy";
@@ -15,6 +16,10 @@ public class PunchHitBox : MonoBehaviour
         hitbox.enabled = false;
     }
 
+    private void Start()
+    {
+        gm = FindObjectOfType<GameManager>();
+    }
     public void EnableHitbox()
     {
         hitbox.enabled = true;
@@ -26,6 +31,8 @@ public class PunchHitBox : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        if (gm != null && gm.isGameOver)
+            return;
         if (other.CompareTag(targetTag))
         {
             var enemy = other.GetComponent<EnemyController>();
@@ -38,7 +45,7 @@ public class PunchHitBox : MonoBehaviour
             var player = other.GetComponent<PlayerHealth>();
             if (player != null)
             {
-                player.TakeDamage(damage);
+                player.TakeDamage(damage*2);
                 AudioManager.Instance.PlaySFX(AudioManager.Instance.sfxHit);
                 Debug.Log("Punch");
             }
