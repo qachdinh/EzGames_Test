@@ -18,6 +18,7 @@ public class LevelDataInfo
     public float tillingY;
 
 
+    public Vector3 allySpawnPoint;
     public Vector3 playerSpawnPoint;
     public List<Vector3> enemySpawnPoint;
 }

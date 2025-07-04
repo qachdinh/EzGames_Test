@@ -1,5 +1,6 @@
 public enum GameMode
 {
     OneVsOne,
-    OneVsTwo
+    OneVsTwo,
+    TwoVsTwo
 }
