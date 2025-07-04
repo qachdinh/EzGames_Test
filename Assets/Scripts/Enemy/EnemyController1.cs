@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -79,18 +79,18 @@ public class EnemyController : MonoBehaviour
         isDead = true;
         animator.SetTrigger("Die");
         StartCoroutine(DieAndShowVictory());  
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.hurt);
     }
 
     private IEnumerator DieAndShowVictory()
     {
         yield return new WaitForSeconds(3f);
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.sfxWin);
+
         var gm = FindObjectOfType<GameManager>();
-        if (gm != null && gm.victoryPanel != null)
+        if (gm != null)
         {
-            gm.victoryPanel.SetActive(true);
+            gm.EnemyDied(); // gọi về GameManager để xử lý
         }
+
         Destroy(gameObject);
     }
 }

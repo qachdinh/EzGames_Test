@@ -366,6 +366,8 @@
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/Scripts/Enemy/EnemyController1.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Level/GameConfig.cs"
+"Assets/Scripts/Level/GameMode.cs"
 "Assets/Scripts/Level/LevelConfigList.cs"
 "Assets/Scripts/Level/LevelData.cs"
 "Assets/Scripts/Player/PlayerCombat.cs"
