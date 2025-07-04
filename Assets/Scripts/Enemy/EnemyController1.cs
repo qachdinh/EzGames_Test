@@ -67,6 +67,7 @@ public class EnemyController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (isDead) return;
         currentHealth -= damage;
         animator.SetTrigger("Hit");
         if (currentHealth <= 0) Die();
@@ -75,13 +76,16 @@ public class EnemyController : MonoBehaviour
 
     public void Die()
     {
+        isDead = true;
         animator.SetTrigger("Die");
         StartCoroutine(DieAndShowVictory());  
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.hurt);
     }
 
     private IEnumerator DieAndShowVictory()
     {
         yield return new WaitForSeconds(3f);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.sfxWin);
         var gm = FindObjectOfType<GameManager>();
         if (gm != null && gm.victoryPanel != null)
         {

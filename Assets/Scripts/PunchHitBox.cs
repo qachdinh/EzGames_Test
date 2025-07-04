@@ -32,12 +32,14 @@ public class PunchHitBox : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.sfxAttack);
             }
 
             var player = other.GetComponent<PlayerHealth>();
             if (player != null)
             {
                 player.TakeDamage(damage);
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.sfxHit);
                 Debug.Log("Punch");
             }
         }
