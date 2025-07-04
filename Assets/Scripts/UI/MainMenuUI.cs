@@ -17,6 +17,12 @@ public class MainMenuUI : MonoBehaviour
         SceneManager.LoadScene("Gameplay");
     }
 
+    public void Play2vs2()
+    {
+        GameConfig.SelectedMode = GameMode.TwoVsTwo;
+        SceneManager.LoadScene("Gameplay");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

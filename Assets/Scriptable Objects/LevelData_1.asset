@@ -16,6 +16,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 1.1
     tillingY: 1.1
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -23,6 +24,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 1.5
     tillingY: 1.5
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -30,6 +32,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 2
     tillingY: 2
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -37,6 +40,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 2.5
     tillingY: 2.5
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -44,6 +48,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 3
     tillingY: 3
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -51,6 +56,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 3.5
     tillingY: 3.5
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -58,6 +64,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 4
     tillingY: 4
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -65,6 +72,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 4.5
     tillingY: 4.5
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -72,6 +80,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 5
     tillingY: 5
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}
@@ -79,6 +88,7 @@ MonoBehaviour:
   - levelNumber: 1
     tillingX: 5.5
     tillingY: 5.5
+    allySpawnPoint: {x: -1.426, y: 0.513, z: -1.514}
     playerSpawnPoint: {x: 0, y: 0.513, z: -1.514}
     enemySpawnPoint:
     - {x: -1.461, y: 0.513, z: 2.38}

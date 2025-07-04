@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int currentLevel = 1;
 
     [SerializeField] private EnemyController currentEnemy;
+    public GameObject allyPrefab;
 
     public GameObject victoryPanel;
     public GameObject finishPanel;
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI levelText;
 
     private int aliveEnemyCount = 0;
+    private int allyAliveCount = 0;
+    private int playerAlive = 1;
 
     void Start()
     {
@@ -28,6 +31,8 @@ public class GameManager : MonoBehaviour
     public void LoadLevel(int levelIndex)
     {
         isGameOver = false;
+        allyAliveCount = 0;
+        playerAlive = 1;
 
         if (levelIndex - 1 >= levelConfigList.levels.datas.Count)
         {
@@ -41,6 +46,13 @@ public class GameManager : MonoBehaviour
 
         player.position = datas.playerSpawnPoint;
         player.GetComponent<PlayerHealth>().ResetHealth();
+
+        if (GameConfig.SelectedMode == GameMode.TwoVsTwo)
+        {
+            Instantiate(allyPrefab, datas.allySpawnPoint, Quaternion.identity);
+            allyAliveCount = 1;
+        }
+
 
         int enemyCount = GameConfig.SelectedMode == GameMode.OneVsOne ? 1 : 2;
 
@@ -88,6 +100,26 @@ public class GameManager : MonoBehaviour
         if (losePanel != null)
         {
             losePanel.SetActive(true);
+        }
+    }
+
+    public void NotifyPlayerDied()
+    {
+        playerAlive = 0;
+
+        if (allyAliveCount <= 0 && !isGameOver)
+        {
+            ShowLose();
+        }
+    }
+
+    public void AllyDied()
+    {
+        allyAliveCount--;
+
+        if (playerAlive <= 0 && allyAliveCount <= 0 && !isGameOver)
+        {
+            ShowLose();
         }
     }
 }

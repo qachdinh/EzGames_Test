@@ -62,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
         var gm = FindObjectOfType<GameManager>();
         if (gm != null)
         {
-            gm.ShowLose();
+            gm.NotifyPlayerDied();
         }
     }
 }
