@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     private int allyAliveCount = 0;
     private int playerAlive = 1;
 
+    private GameObject currentAlly;
     void Start()
     {
         LoadLevel(currentLevel);
@@ -49,7 +50,12 @@ public class GameManager : MonoBehaviour
 
         if (GameConfig.SelectedMode == GameMode.TwoVsTwo)
         {
-            Instantiate(allyPrefab, datas.allySpawnPoint, Quaternion.identity);
+            if (currentAlly != null)
+            {
+                Destroy(currentAlly);
+            }
+
+            currentAlly = Instantiate(allyPrefab, datas.allySpawnPoint, Quaternion.identity);
             allyAliveCount = 1;
         }
 
@@ -105,21 +111,14 @@ public class GameManager : MonoBehaviour
 
     public void NotifyPlayerDied()
     {
-        playerAlive = 0;
+        if (isGameOver) return;
 
-        if (allyAliveCount <= 0 && !isGameOver)
-        {
-            ShowLose();
-        }
+        playerAlive = 0;
+        ShowLose();
     }
 
     public void AllyDied()
     {
         allyAliveCount--;
-
-        if (playerAlive <= 0 && allyAliveCount <= 0 && !isGameOver)
-        {
-            ShowLose();
-        }
     }
 }
