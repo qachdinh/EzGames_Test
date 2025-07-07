@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 50}
   m_MaxSize: {x: 32384, y: 8096}
   vertical: 0
-  controlID: 114
+  controlID: 111
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,8 +169,8 @@ MonoBehaviour:
     y: 0
     width: 295.2
     height: 1010.80005
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -222,8 +222,8 @@ MonoBehaviour:
     y: 0
     width: 378.40002
     height: 1010.80005
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -650,9 +650,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 768, y: 1024, z: 0}
+    m_Target: {x: 863.01495, y: 2169.8582, z: -1.2137206}
     speed: 2
-    m_Value: {x: 768, y: 1024, z: 0}
+    m_Value: {x: 863.01495, y: 2169.8582, z: -1.2137206}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -700,11 +700,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0, y: 0, z: -0, w: -1}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1280
+    m_Target: 232.0812
     speed: 2
-    m_Value: 1280
+    m_Value: 232.0812
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 1536, y: 2048}
+  m_TargetSize: {x: 1440, y: 3040}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -891,11 +891,11 @@ MonoBehaviour:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     pluginStates:
     - '{}'
-    scale: 37
+    scale: 30
     fitToScreenEnabled: 1
     rotationDegree: 0
-    highlightSafeAreaEnabled: 0
-    friendlyName: Apple iPad Mini 4
+    highlightSafeAreaEnabled: 1
+    friendlyName: Samsung Galaxy S10 5G
     screenIndex: 0
     networkReachability: 1
     systemLanguage: 10
@@ -936,23 +936,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ac6a0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aed3ffffbed6fffff0e9ffff08fbffffb86a0000c26a0000
+      m_ExpandedIDs: 3a76ffff8a76ffff787fffff9c7fffff5493ffff24b0ffffd6baffffc8bbffffa0c6ffffaaf1ffff2cfbffff7e5a00008c5a0000386e0000466e0000ba6e0000146f0000186f00008c7100009a710000687200006c720000b4720000c27200003673000094730000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Button
+        m_OriginalName: Button
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 29446
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -1056,23 +1056,23 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c5d0000
-    m_LastClickedID: 23932
-    m_ExpandedIDs: 000000005e5d0000605d0000625d000000ca9a3bffffff7f
+    m_SelectedIDs: d0680000
+    m_LastClickedID: 26832
+    m_ExpandedIDs: 00000000a6680000a8680000aa68000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Level
-      m_OriginalName: Level
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 23940
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -1086,7 +1086,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005e5d0000605d0000625d0000
+    m_ExpandedIDs: 00000000a6680000a8680000aa680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
